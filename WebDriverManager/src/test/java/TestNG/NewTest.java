@@ -9,27 +9,27 @@ public class NewTest {
 
 	@BeforeMethod
 	public void beforeMethod() {
-		System.out.println("Welcome");
+		System.out.println("Welcome BM");
 	}
 
-	@Test
+	@Test(priority=3)
 	public void Registration() {
 
 		System.out.println("User Registration");
 	}
 
-	@Test
+	@Test(priority=2)
 	public void AddName() {
 		System.out.println("User Name");
 	}
 
-	@Test
+	@Test(priority=1)
 	public void AddAge() {
 
 		System.out.println("User Age");
 	}
 
-	@Test
+	@Test(priority=4)
 	public void AddAddress() {
 
 		System.out.println("User Address");
@@ -37,7 +37,7 @@ public class NewTest {
 
 
 
-	@Test(priority=1)
+	@Test(priority=5)
 	public void AddPhone() {
 
 		System.out.println("User Phone No");
@@ -46,7 +46,7 @@ public class NewTest {
 
 	@AfterMethod
 	public void afterMethod() {
-		System.out.println("By");
+		System.out.println("By AM");
 	}
 
 }

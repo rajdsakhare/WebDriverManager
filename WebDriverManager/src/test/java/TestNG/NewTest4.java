@@ -4,10 +4,10 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 
-public class NewTest3 {
+public class NewTest4 {
   @Test
   public void f() {
-	  System.out.println("New test 3");
+	  System.out.println("Test");
   }
   @BeforeMethod
   public void beforeMethod() {
